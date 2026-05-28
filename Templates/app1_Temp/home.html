@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <table border="2">
+        <tr>
+            <th>employee id</th>
+            <th>employee name</th>
+            <th>employee email</th>
+            <th>employee salary</th>
+        </tr>
+        {% for x in data %}
+        <tr>
+            <td>{{ x.Employee_id }}</td>
+            <td>{{ x.Employee_name }}</td>
+            <td>{{ x.Employee_email }}</td>
+            <td>{{ x.Employee_salary }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
