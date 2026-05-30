@@ -1,7 +1,7 @@
-# from django import forms
-# from app1.models import employee
+from django import forms
+from app1.models import employee
 
-# class Employee_form(forms.ModelForm):
-#     class Meta:
-#         model = employee
-#         fields = '__all__'
+class Employee_form(forms.ModelForm):
+    class Meta:
+        model = employee
+        fields = '__all__'
